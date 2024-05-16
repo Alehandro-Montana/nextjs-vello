@@ -74,3 +74,13 @@
       @apply bg-background text-foreground;
     }
   }
+  font-face {
+    font-family: 'CustomFont';
+    src: url('/public/fonts/font.woff2') format('woff2'),
+         
+    /* Додайте інші формати шрифтів, якщо необхідно */
+  }
+  
+  body {
+    font-family: 'CustomFont', sans-serif; /* Використовуємо вказаний шрифт */
+  }
