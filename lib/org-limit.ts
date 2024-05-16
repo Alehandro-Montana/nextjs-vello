@@ -1,7 +1,7 @@
 import { auth } from "@clerk/nextjs";
 
 import { db } from "@/lib/db";
-//import { MAX_FREE_BOARDS } from "@/constants/boards";
+
 
 export const incrementAvailableCount = async () => {
   const { orgId } = auth();
@@ -60,11 +60,7 @@ export const hasAvailableCount = async () => {
     where: { orgId }
   });
 
- /* if (!orgLimit || orgLimit.count < MAX_FREE_BOARDS) {
-    return true;
-  } else {
-    return false;
-  }*/
+
 };
 
 export const getAvailableCount = async () => {
