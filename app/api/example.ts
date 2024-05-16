@@ -1,4 +1,4 @@
-/*import { getAuth } from "@clerk/nextjs/server";
+import { getAuth } from "@clerk/nextjs/server";
 import type { NextApiRequest, NextApiResponse } from 'next';
 
 export default async function handler(req: NextApiRequest, res: NextApiResponse) {
@@ -17,5 +17,5 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
   return res.status(200).json({ firstName, primaryEmail });
 }
-*/
+
 //добавлено в сессии 30.04.
